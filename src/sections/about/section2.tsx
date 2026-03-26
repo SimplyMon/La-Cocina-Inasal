@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+import about2 from "../../assets/about2.jpg";
+
 export function Section2() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -38,7 +40,7 @@ export function Section2() {
           >
             <div className="relative rounded-4xl overflow-hidden shadow-2xl border-4 border-white z-10">
               <img
-                src="/src/assets/about2.jpg"
+                src={about2}
                 alt="Our Lola cooking"
                 className="w-full h-[400px] md:h-[550px] object-cover"
               />

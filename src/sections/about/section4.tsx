@@ -1,5 +1,19 @@
 import { useEffect, useRef, useState } from "react";
 
+import team from "../../assets/gallery/team.jpg";
+import teamOwner from "../../assets/gallery/team-owner.jpg";
+import interior from "../../assets/gallery/interior.jpg";
+import about1 from "../../assets/gallery/about1.jpg";
+import about2Gallery from "../../assets/gallery/about2.jpg";
+
+import pitso from "../../assets/menu/pitso.jpg";
+import bbangus from "../../assets/menu/bbangus.jpg";
+import bulalo from "../../assets/menu/bulalo.jpg";
+
+import about from "../../assets/about.jpg";
+import about2 from "../../assets/about2.jpg";
+import logo from "../../assets/logo.png";
+
 interface GalleryImage {
   id: number;
   src: string;
@@ -53,67 +67,67 @@ export function Section4() {
   const pictures: GalleryImage[] = [
     {
       id: 1,
-      src: "/src/assets/gallery/team.jpg",
+      src: team,
       alt: "IT Team",
       size: "large",
     },
     {
       id: 2,
-      src: "/src/assets/menu/pitso.jpg",
+      src: pitso,
       alt: "Our Signature Pitso Inasal grilled",
       size: "small",
     },
     {
       id: 3,
-      src: "/src/assets/about.jpg",
+      src: about,
       alt: "Our warm restaurant exterior",
       size: "small",
     },
     {
       id: 4,
-      src: "/src/assets/gallery/about1.jpg",
+      src: about1,
       alt: "Our warm restaurant Interior",
       size: "large",
     },
     {
       id: 5,
-      src: "/src/assets/menu/bbangus.jpg",
+      src: bbangus,
       alt: "Boneless Bangus plated",
       size: "small",
     },
     {
       id: 6,
-      src: "/src/assets/about2.jpg",
+      src: about2,
       alt: "La Cocina Inasal Restaurant",
       size: "small",
     },
     {
       id: 7,
-      src: "/src/assets/gallery/team-owner.jpg",
+      src: teamOwner,
       alt: "Team with the Owner",
       size: "large",
     },
     {
       id: 8,
-      src: "/src/assets/menu/bulalo.jpg ",
+      src: bulalo,
       alt: "Our Bulalo special",
       size: "small",
     },
     {
       id: 9,
-      src: "/src/assets/logo.png",
+      src: logo,
       alt: "Logo La Cocina Inasal",
       size: "small",
     },
     {
       id: 10,
-      src: "/src/assets/gallery/interior.jpg",
+      src: interior,
       alt: "Kitchen action cooking Inasal",
       size: "small",
     },
     {
       id: 11,
-      src: "/src/assets/gallery/about2.jpg",
+      src: about2Gallery,
       alt: "La Cocina Inasal Parking",
       size: "small",
     },

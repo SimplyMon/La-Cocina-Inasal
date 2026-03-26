@@ -1,5 +1,33 @@
 import { useState, useEffect, useRef } from "react";
 
+import pitso from "../../assets/menu/pitso.jpg";
+import bulalo from "../../assets/menu/bulalo.jpg";
+import bbangus from "../../assets/menu/bbangus.jpg";
+import ibangus from "../../assets/menu/ibangus.jpg";
+import sizbulalo from "../../assets/menu/sizbulalo.jpg";
+import bsisig from "../../assets/menu/bsisig.jpg";
+import sisig from "../../assets/menu/sisig.jpg";
+import bsteak from "../../assets/menu/bsteak.jpg";
+import sbaka from "../../assets/menu/sbaka.jpg";
+import sbangus from "../../assets/menu/sbangus.jpg";
+import caldereta from "../../assets/menu/caldereta.jpg";
+import gbeef from "../../assets/menu/gbeef.jpg";
+import brocoli from "../../assets/menu/brocoli.jpg";
+import corn from "../../assets/menu/corn.jpg";
+import tapsi from "../../assets/menu/tapsi.jpg";
+import hotsilog from "../../assets/menu/hotsilog.jpg";
+import chix from "../../assets/menu/chix.jpg";
+import canton from "../../assets/menu/canton.jpg";
+import bihon from "../../assets/menu/bihon.jpg";
+import palabok from "../../assets/menu/palabok.jpg";
+import spag from "../../assets/menu/spag.jpg";
+import burger from "../../assets/menu/burger.jpg";
+import halo from "../../assets/menu/halo.jpg";
+import pandan from "../../assets/menu/pandan.jpg";
+import saging from "../../assets/menu/saging.jpg";
+import chop from "../../assets/menu/chop.jpg";
+import kangkong from "../../assets/menu/kangkong.jpg";
+
 interface MenuItem {
   id: number;
   category: string;
@@ -99,7 +127,7 @@ export function MenuScreen() {
       name: "Grilled Pitso",
       desc: "Juicy grilled chicken oyster cut, marinated in savory spices with a signature smoky flavor.",
       price: "₱179",
-      img: "/src/assets/menu/pitso.jpg",
+      img: pitso,
       tag: "Best Seller",
     },
     {
@@ -108,7 +136,7 @@ export function MenuScreen() {
       name: "Bulalo",
       desc: "Hearty beef shank soup simmered until tender, with rich marrow broth, corn, cabbage, and potatoes.",
       price: "₱169",
-      img: "/src/assets/menu/bulalo.jpg",
+      img: bulalo,
     },
     {
       id: 3,
@@ -116,7 +144,7 @@ export function MenuScreen() {
       name: "Boneless Bangus",
       desc: "Deboned milkfish marinated in vinegar and garlic, and stuffed with tomatoes and onions.",
       price: "₱169",
-      img: "/src/assets/menu/bbangus.jpg",
+      img: bbangus,
     },
     {
       id: 4,
@@ -124,7 +152,7 @@ export function MenuScreen() {
       name: "Inihaw na Bangus",
       desc: "Marinated in lemongrass, calamansi, and annatto oil, grilled over hot coals.",
       price: "₱169",
-      img: "/src/assets/menu/ibangus.jpg",
+      img: ibangus,
     },
     {
       id: 5,
@@ -132,7 +160,7 @@ export function MenuScreen() {
       name: "Sizzling Bulalo",
       desc: "Tender beef shank with rich marrow, served sizzling with savory gravy and vegetables.",
       price: "₱179",
-      img: "/src/assets/menu/sizbulalo.jpg",
+      img: sizbulalo,
       tag: "Chef's Choice",
     },
     {
@@ -141,7 +169,7 @@ export function MenuScreen() {
       name: "Bangus Sisig",
       desc: "Flaked milkfish sautéed with onions, chili, and citrus, served sizzling on a hot plate.",
       price: "₱159",
-      img: "/src/assets/menu/bsisig.jpg",
+      img: bsisig,
     },
     {
       id: 7,
@@ -149,7 +177,7 @@ export function MenuScreen() {
       name: "Sisig",
       desc: "Crispy chopped pork with onions and chili, served sizzling and packed with bold flavor.",
       price: "₱159",
-      img: "/src/assets/menu/sisig.jpg",
+      img: sisig,
     },
     {
       id: 8,
@@ -157,7 +185,7 @@ export function MenuScreen() {
       name: "Beef Steak",
       desc: "Tender beef slices sautéed in soy sauce, calamansi, and onions for a savory, tangy flavor.",
       price: "₱149",
-      img: "/src/assets/menu/bsteak.jpg",
+      img: bsteak,
     },
     {
       id: 9,
@@ -165,7 +193,7 @@ export function MenuScreen() {
       name: "Sinigang na Baka",
       desc: "Beef in a sour tamarind broth with kangkong, radish, and eggplant.",
       price: "₱149",
-      img: "/src/assets/menu/sbaka.jpg",
+      img: sbaka,
     },
     {
       id: 10,
@@ -173,7 +201,7 @@ export function MenuScreen() {
       name: "Sinigang na Bangus",
       desc: "Milkfish simmered in a tangy tamarind soup with fresh vegetables.",
       price: "₱149",
-      img: "/src/assets/menu/sbangus.jpg",
+      img: sbangus,
     },
     {
       id: 11,
@@ -181,7 +209,7 @@ export function MenuScreen() {
       name: "Caldereta",
       desc: "Beef stew cooked in a rich tomato-based sauce with potatoes, carrots, and bell peppers.",
       price: "₱149",
-      img: "/src/assets/menu/caldereta.jpg",
+      img: caldereta,
     },
     {
       id: 12,
@@ -189,7 +217,7 @@ export function MenuScreen() {
       name: "Garlic Pepper Beef",
       desc: "Tender beef strips sautéed with garlic and black pepper for a bold, savory kick.",
       price: "₱149",
-      img: "/src/assets/menu/sinigang.jpg",
+      img: gbeef,
     },
     {
       id: 13,
@@ -197,7 +225,7 @@ export function MenuScreen() {
       name: "Beef Broccoli",
       desc: "Beef slices stir-fried with fresh broccoli in a savory oyster-based sauce.",
       price: "₱149",
-      img: "/src/assets/menu/sbangus.jpg",
+      img: brocoli,
     },
     {
       id: 14,
@@ -205,7 +233,7 @@ export function MenuScreen() {
       name: "Cornsilog",
       desc: "Sweet corned beef served with garlic rice and a fried egg.",
       price: "₱149",
-      img: "/src/assets/menu/corn.jpg",
+      img: corn,
     },
     {
       id: 15,
@@ -213,7 +241,7 @@ export function MenuScreen() {
       name: "Tapsilog",
       desc: "Classic cured beef tapa with garlic rice and a sunny-side-up egg.",
       price: "₱149",
-      img: "/src/assets/menu/tapsi.jpg",
+      img: tapsi,
     },
     {
       id: 16,
@@ -221,7 +249,7 @@ export function MenuScreen() {
       name: "Hotsilog",
       desc: "Juicy hotdog served with garlic rice and a fried egg.",
       price: "₱149",
-      img: "/src/assets/menu/hotsilog.jpg",
+      img: hotsilog,
     },
     {
       id: 17,
@@ -229,7 +257,7 @@ export function MenuScreen() {
       name: "Chixsilog",
       desc: "Savory fried chicken served with garlic rice and a fried egg.",
       price: "₱149",
-      img: "/src/assets/menu/chix.jpg",
+      img: chix,
     },
     {
       id: 18,
@@ -237,7 +265,7 @@ export function MenuScreen() {
       name: "Pancit Canton",
       desc: "Stir-fried egg noodles with vegetables and savory sauce, topped with meat and seafood.",
       price: "₱89",
-      img: "/src/assets/menu/canton.jpg",
+      img: canton,
     },
     {
       id: 19,
@@ -245,7 +273,7 @@ export function MenuScreen() {
       name: "Pancit Bihon",
       desc: "Light rice noodles sautéed with vegetables, meat, and a flavorful soy-based seasoning.",
       price: "₱89",
-      img: "/src/assets/menu/bihon.jpg",
+      img: bihon,
     },
     {
       id: 20,
@@ -253,7 +281,7 @@ export function MenuScreen() {
       name: "Palabok",
       desc: "Rice noodles topped with rich shrimp sauce, crushed chicharrón, egg, and garlic.",
       price: "₱89",
-      img: "/src/assets/menu/palabok.jpg",
+      img: palabok,
     },
     {
       id: 21,
@@ -261,7 +289,7 @@ export function MenuScreen() {
       name: "Spaghetti",
       desc: "Filipino-style sweet spaghetti with savory meat sauce, hotdogs, and grated cheese.",
       price: "₱79",
-      img: "/src/assets/menu/spag.jpg",
+      img: spag,
     },
     {
       id: 22,
@@ -269,7 +297,7 @@ export function MenuScreen() {
       name: "Burger",
       desc: "Juicy beef patty in a soft bun with fresh vegetables and a flavorful sauce.",
       price: "₱79",
-      img: "/src/assets/menu/burger.jpg",
+      img: burger,
     },
     {
       id: 23,
@@ -277,7 +305,7 @@ export function MenuScreen() {
       name: "Classic Halo-Halo",
       desc: "Shaved ice layered with sweetened beans, jellies, ube, and leche flan, topped with evaporated milk.",
       price: "₱89",
-      img: "/src/assets/menu/halo.jpg",
+      img: halo,
     },
     {
       id: 24,
@@ -285,7 +313,7 @@ export function MenuScreen() {
       name: "Buko Pandan",
       desc: "Sweet young coconut with pandan jelly in a creamy, chilled dessert mix.",
       price: "₱69",
-      img: "/src/assets/menu/pandan.jpg",
+      img: pandan,
     },
     {
       id: 25,
@@ -293,7 +321,7 @@ export function MenuScreen() {
       name: "Saging con Yelo",
       desc: "Crushed ice with sweet saba bananas, brown sugar, and milk for a refreshing treat.",
       price: "₱69",
-      img: "/src/assets/menu/saging.jpg",
+      img: saging,
     },
     {
       id: 26,
@@ -301,7 +329,7 @@ export function MenuScreen() {
       name: "Chopsuey",
       desc: "Stir-fried mixed vegetables with meat and a light savory sauce.",
       price: "₱89",
-      img: "/src/assets/menu/chop.jpg",
+      img: chop,
     },
     {
       id: 27,
@@ -309,7 +337,7 @@ export function MenuScreen() {
       name: "Kangkong",
       desc: "Fresh water spinach sautéed with garlic and savory seasonings.",
       price: "₱89",
-      img: "/src/assets/menu/kangkong.jpg",
+      img: kangkong,
     },
   ];
 

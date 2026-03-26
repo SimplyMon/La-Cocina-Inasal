@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
+import about from "../../assets/about.jpg";
+import about2 from "../../assets/about2.jpg";
+
 export function Section2() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -50,7 +53,7 @@ export function Section2() {
           >
             <div className="relative z-10 w-4/5 md:w-3/4 rounded-4xl overflow-hidden shadow-xl border-4 border-white ml-auto lg:ml-8">
               <img
-                src="/src/assets/about2.jpg"
+                src={about}
                 alt="Cooking authentic Filipino food"
                 className="w-full h-[350px] md:h-[500px] object-cover"
               />
@@ -58,7 +61,7 @@ export function Section2() {
 
             <div className="absolute -bottom-10 left-0 w-3/5 sm:w-1/2 rounded-4xl overflow-hidden shadow-2xl border-4 border-white z-20">
               <img
-                src="/src/assets/about.jpg"
+                src={about2}
                 alt="Restaurant serving"
                 className="w-full h-[200px] sm:h-[280px] object-cover"
               />

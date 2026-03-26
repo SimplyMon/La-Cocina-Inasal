@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
+import pitso from "../../assets/menu/pitso.jpg";
+import sisig from "../../assets/menu/sisig.jpg";
+import bulalo from "../../assets/menu/bulalo.jpg";
+import halo from "../../assets/menu/halo.jpg";
+
 export function Section4() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -37,7 +42,7 @@ export function Section4() {
       name: "Grilled Pitso",
       desc: "Juicy grilled chicken oyster cut, marinated in a savory blend of spices and served smoky and tender.",
       price: "₱280",
-      img: "/src/assets/menu/pitso.jpg",
+      img: pitso,
       tag: "Chef's Choice",
       tagColor: "bg-primary",
     },
@@ -46,7 +51,7 @@ export function Section4() {
       name: "Sizzling Sisig",
       desc: "Crispy chopped pork mask, onions, and chili, served smoking hot on a cast iron plate.",
       price: "₱250",
-      img: "/src/assets/menu/sisig.jpg",
+      img: sisig,
       tag: "Best Seller",
       tagColor: "bg-accent",
     },
@@ -55,7 +60,7 @@ export function Section4() {
       name: "Bulalo",
       desc: "Beef shank soup simmered for hours until tender, with marrow-rich broth, corn, cabbage, and potatoes.",
       price: "₱350",
-      img: "/src/assets/menu/bulalo.jpg",
+      img: bulalo,
       tag: "Weekend Special",
       tagColor: "bg-secondary text-dark",
     },
@@ -64,7 +69,7 @@ export function Section4() {
       name: "Classic Halo-Halo",
       desc: "Shaved ice, sweetened beans, jellies, and ube halaya, topped with creamy leche flan.",
       price: "₱150",
-      img: "/src/assets/menu/halo.jpg",
+      img: halo,
       tag: "Dessert",
       tagColor: "bg-dark",
     },

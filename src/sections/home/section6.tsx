@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import gaila from "../../assets/testimonials/gaila.png";
+import gorospe from "../../assets/testimonials/gorospe.png";
+import mon from "../../assets/testimonials/mon.png";
 
 export function Section6() {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,7 +41,7 @@ export function Section6() {
       review:
         "The Pork Belly Adobo tastes exactly like my Lola's cooking. It's so hard to find genuine lutong bahay in the city, but La Cocina Inasal nails it every single time. My family eats here every Sunday!",
       rating: 5,
-      image: "/src/assets/testimonials/mon.png",
+      image: mon,
     },
     {
       id: 2,
@@ -47,7 +50,7 @@ export function Section6() {
       review:
         "Hands down the best Sizzling Sisig I've had in a long time. Perfectly crispy, perfectly seasoned. The ambiance is warm and the staff treats you like family. Highly recommended!",
       rating: 5,
-      image: "/src/assets/testimonials/gaila.png",
+      image: gaila,
     },
     {
       id: 3,
@@ -56,7 +59,7 @@ export function Section6() {
       review:
         "We booked a table for our anniversary wanting something authentic. The Kare-Kare was incredibly rich and the meat was fall-off-the-bone tender. A premium dining experience with true Filipino heart.",
       rating: 5,
-      image: "/src/assets/testimonials/gorospe.png",
+      image: gorospe,
     },
   ];
 

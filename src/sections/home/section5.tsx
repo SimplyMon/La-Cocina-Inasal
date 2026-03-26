@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import halo from "../../assets/resto.jpg";
 
 export function Section5() {
   const [isVisible, setIsVisible] = useState(false);
@@ -63,7 +64,7 @@ export function Section5() {
           <div className="lg:w-5/12 relative min-h-[300px] lg:min-h-full overflow-hidden">
             <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
             <img
-              src="/src/assets/resto.jpg"
+              src={halo}
               alt="Restaurant Partnership"
               className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out"
             />
