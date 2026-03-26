@@ -92,7 +92,7 @@ export function HeaderComponent() {
                   : "text-base hover:text-secondary"
               }`}
             >
-              Location
+              Contact
             </Link>
 
             <button className="bg-primary text-white px-6 py-2.5 rounded-full font-medium shadow-md shadow-primary/20 hover:bg-primary/90 hover:-translate-y-0.5 transition-all flex items-center">
@@ -147,7 +147,7 @@ export function HeaderComponent() {
             onClick={() => setIsOpen(false)}
             className="block px-6 py-3 text-dark hover:bg-secondary/20 hover:text-primary font-medium transition-colors"
           >
-            Location
+            Contact
           </Link>
           <div className="px-6 mt-2">
             <button className="w-full text-center px-4 py-3 bg-primary text-white rounded-xl font-medium shadow-md shadow-primary/20 hover:bg-primary/90 transition-all flex justify-center items-center">
