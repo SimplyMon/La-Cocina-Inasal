@@ -1,74 +1,113 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
-// If your logo is in your src/assets folder, import it like this:
-// import logoImg from '../assets/your-logo.png';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import logo from "/src/assets/logo.png";
 
 export function HeaderComponent() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // If you are using an image from your public folder, you can just use the path as a string.
-  // Example: const logoPath = "/logo.png";
-  const logoPath = "src/assets/logo.png"; // Replace this string with your actual logo path or imported variable
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const applySolidStyle = !isHomePage || isScrolled;
 
   return (
-    <nav className="bg-base font-poppins shadow-sm shadow-primary/10 fixed w-full z-50 border-b border-secondary/30">
+    <nav
+      className={`font-poppins fixed w-full z-50 transition-all duration-300 ${
+        applySolidStyle
+          ? "bg-base shadow-md border-b border-secondary/30 py-0"
+          : "bg-transparent py-2"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          {" "}
-          {/* Added items-center here for better vertical alignment */}
-          {/* BRANDING */}
           <div className="shrink-0 flex items-center">
             <Link to="/" className="flex items-center gap-3">
-              {" "}
-              {/* Increased gap slightly for the image */}
-              {/* Added the image tag. h-12 w-12 keeps it a square. rounded-md fits the theme. */}
               <img
-                src={logoPath}
+                src={logo}
                 alt="La Cocina Inasal Logo"
                 className="h-12 w-12 object-cover rounded-md shadow-sm border border-secondary/20"
               />
-              <span className="text-xl sm:text-2xl font-bold text-primary tracking-tight">
+              <span
+                className={`text-xl sm:text-2xl font-bold tracking-tight transition-colors duration-300 ${
+                  applySolidStyle ? "text-primary" : "text-secondary"
+                }`}
+              >
                 La Cocina Inasal
               </span>
             </Link>
           </div>
-          {/* DESKTOP MENU */}
+
           <div className="hidden md:flex md:items-center space-x-8">
             <Link
               to={"/"}
-              className="text-dark hover:text-primary font-medium transition-colors"
+              className={`font-medium transition-colors duration-300 ${
+                applySolidStyle
+                  ? "text-dark hover:text-primary"
+                  : "text-base hover:text-secondary"
+              }`}
             >
               Home
             </Link>
             <Link
               to={"/menu"}
-              className="text-dark hover:text-primary font-medium transition-colors"
+              className={`font-medium transition-colors duration-300 ${
+                applySolidStyle
+                  ? "text-dark hover:text-primary"
+                  : "text-base hover:text-secondary"
+              }`}
             >
               Menu
             </Link>
             <Link
               to={"/about"}
-              className="text-dark hover:text-primary font-medium transition-colors"
+              className={`font-medium transition-colors duration-300 ${
+                applySolidStyle
+                  ? "text-dark hover:text-primary"
+                  : "text-base hover:text-secondary"
+              }`}
             >
               Our Story
             </Link>
             <Link
               to={"/contact"}
-              className="text-dark hover:text-primary font-medium transition-colors"
+              className={`font-medium transition-colors duration-300 ${
+                applySolidStyle
+                  ? "text-dark hover:text-primary"
+                  : "text-base hover:text-secondary"
+              }`}
             >
               Location
             </Link>
 
-            {/* CALL TO ACTION BUTTON */}
             <button className="bg-primary text-white px-6 py-2.5 rounded-full font-medium shadow-md shadow-primary/20 hover:bg-primary/90 hover:-translate-y-0.5 transition-all flex items-center">
               <i className="fa fa-shopping-bag mr-2"></i> Order Now
             </button>
           </div>
-          {/* MOBILE MENU BUTTON */}
+
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-primary hover:text-primary/80 focus:outline-none p-2"
+              className={`focus:outline-none p-2 transition-colors duration-300 ${
+                applySolidStyle
+                  ? "text-primary hover:text-primary/80"
+                  : "text-base hover:text-secondary"
+              }`}
             >
               {isOpen ? (
                 <i className="fa fa-times fa-2x"></i>
@@ -80,7 +119,6 @@ export function HeaderComponent() {
         </div>
       </div>
 
-      {/* MOBILE MENU DROPDOWN */}
       {isOpen && (
         <div className="md:hidden bg-base border-t border-secondary/30 shadow-lg absolute w-full pb-4">
           <Link
