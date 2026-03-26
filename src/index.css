@@ -1,18 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Custom Fonts */
   --font-poppins: "Poppins", sans-serif;
-
-  /* "Carinderia Warmth" Color Palette */
   --color-primary: #af3728;
   --color-secondary: #f4c95d;
   --color-accent: #1a8a07;
   --color-base: #fff6e9;
   --color-dark: #2b2b2b;
+  --animate-scroll-up: scrollUp 40s linear infinite;
+  --animate-scroll-down: scrollDown 40s linear infinite;
 }
 
-/* Optional: Set the default font and background for the whole app */
 @layer base {
   * {
     font-family: var(--font-poppins);
@@ -21,5 +19,41 @@
   body {
     background-color: var(--color-base);
     color: var(--color-dark);
+  }
+}
+
+@layer utilities {
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .fade-edges {
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      black 10%,
+      black 90%,
+      transparent
+    );
   }
 }
