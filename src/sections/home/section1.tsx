@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import bgHero from "../../assets/bg.png";
-import pitso from "../../assets/menu/pitso.jpg";
-import bulalo from "../../assets/menu/bulalo.jpg";
-import bbangus from "../../assets/menu/bbangus.jpg";
-import ibangus from "../../assets/menu/ibangus.jpg";
-import sisig from "../../assets/menu/sisig.jpg";
-import sbaka from "../../assets/menu/sbaka.jpg";
-import sbangus from "../../assets/menu/sbangus.jpg";
+import pitso from "../../assets/menu/pitso.JPG";
+import bulalo from "../../assets/menu/bulalo.JPG";
+import bbangus from "../../assets/menu/bbangus.JPG";
+import ibangus from "../../assets/menu/ibangus.JPG";
+import sisig from "../../assets/menu/sisig.JPG";
+import sbaka from "../../assets/menu/sbaka.JPG";
+import sbangus from "../../assets/menu/sbangus.JPG";
 
 interface FoodItem {
   name: string;
