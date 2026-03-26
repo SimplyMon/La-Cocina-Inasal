@@ -1,19 +1,15 @@
 import { Link } from "react-router-dom";
+import logo from "/src/assets/logo.png";
 
 export function FooterComponent() {
-  // Use the same logo path/import you used in the Header
-  const logoPath = "src/assets/logo.png";
-
   return (
-    // Changed to bg-primary with text-base (off-white) for a warm, grounded footer
-    <footer className="bg-primary text-base font-poppins mt-20">
+    <footer className="bg-primary text-base font-poppins">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="md:flex md:justify-between md:items-start gap-12">
-          {/* BRANDING & ABOUT */}
           <div className="mb-12 md:mb-0 md:w-1/3">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img
-                src={logoPath}
+                src={logo}
                 alt="La Cocina Inasal Logo"
                 className="h-12 w-12 object-cover rounded-md"
               />
@@ -22,14 +18,12 @@ export function FooterComponent() {
               </span>
             </Link>
             <p className="mt-3 text-base/80 leading-relaxed max-w-sm">
-              Bringing the authentic taste of Filipino Cuisine warmth
-              straight to your plate. served fresh daily.
+              Bringing the authentic taste of Filipino Cuisine warmth straight
+              to your plate, Served fresh daily.
             </p>
           </div>
 
-          {/* LINKS COLUMNS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:w-2/3">
-            {/* Column 1 */}
             <div>
               <h4 className="text-secondary font-bold mb-4 tracking-wide">
                 Explore
@@ -70,7 +64,6 @@ export function FooterComponent() {
               </ul>
             </div>
 
-            {/* Column 2 */}
             <div>
               <h4 className="text-secondary font-bold mb-4 tracking-wide">
                 Services
@@ -103,7 +96,6 @@ export function FooterComponent() {
               </ul>
             </div>
 
-            {/* Column 3 - Socials */}
             <div>
               <h4 className="text-secondary font-bold mb-4 tracking-wide">
                 Follow Us
@@ -131,7 +123,6 @@ export function FooterComponent() {
                     className="hover:text-secondary transition-colors transform hover:scale-110 inline-block"
                   >
                     <i className="fab fa-tiktok fa-lg"></i>{" "}
-                    {/* Swapped Github for Tiktok */}
                   </a>
                 </li>
                 <li>
@@ -145,7 +136,6 @@ export function FooterComponent() {
               </ul>
             </div>
 
-            {/* Column 4 - Contact */}
             <div>
               <h4 className="text-secondary font-bold mb-4 tracking-wide">
                 Contact
@@ -153,10 +143,10 @@ export function FooterComponent() {
               <ul className="space-y-3 text-base/80">
                 <li>
                   <a
-                    href="mailto:hello@lacocinainasal.com"
+                    href="mailto:lacocinainasal692@gmail.com"
                     className="hover:text-secondary transition-colors"
                   >
-                    hello@lacocinainasal.com
+                    lacocinainasal692@gmail.com
                   </a>
                 </li>
                 <li>
@@ -164,30 +154,34 @@ export function FooterComponent() {
                     href="tel:+639123456789"
                     className="hover:text-secondary transition-colors"
                   >
-                    +63 912 345 6789
+                    +63 995-098-2343
                   </a>
                 </li>
                 <li className="pt-2">
                   <span className="block font-medium text-base">
                     Open Daily:
                   </span>
-                  10:00 AM - 10:00 PM
+                  9:00 AM - 8:00 PM
                 </li>
               </ul>
             </div>
           </div>
         </div>
 
-        {/* COPYRIGHT */}
         <div className="mt-16 border-t border-base/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-base/60 text-sm">
           <p>
             © {new Date().getFullYear()} La Cocina Inasal. All rights reserved.
           </p>
           <p>
             Designed by{" "}
-            <span className="font-semibold text-secondary/80 hover:text-secondary cursor-pointer transition-colors">
+            <a
+              href="https://mondev.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-secondary/80 hover:text-secondary transition-colors"
+            >
               Mon.Dev
-            </span>
+            </a>
           </p>
         </div>
       </div>
