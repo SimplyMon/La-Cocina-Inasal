@@ -6,6 +6,7 @@ import { NotFound } from "./components/layout/NotFound";
 import { HomeScreen } from "./components/screen/HomeScreen";
 import { MenuScreen } from "./components/screen/MenuScreen";
 import { AboutScreen } from "./components/screen/AboutScreen";
+import { ContactScreen } from "./components/screen/ContactScreen";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/menu" element={<MenuScreen />} />
         <Route path="/about" element={<AboutScreen />} />
+        <Route path="/contact" element={<ContactScreen />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <FooterComponent />
