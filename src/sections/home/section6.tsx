@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gaila from "../../assets/testimonials/gaila.png";
 import gorospe from "../../assets/testimonials/gorospe.png";
-import mon from "../../assets/testimonials/pic.png";
+import mon from "../../assets/testimonials/pic.jpg";
 
 export function Section6() {
   const [isVisible, setIsVisible] = useState(false);
