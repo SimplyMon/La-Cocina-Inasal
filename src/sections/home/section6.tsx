@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gaila from "../../assets/testimonials/gaila.png";
 import gorospe from "../../assets/testimonials/gorospe.png";
-import mon from "../../assets/testimonials/mon.png";
+import mon from "../../assets/testimonials/pic.png";
 
 export function Section6() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,7 +39,7 @@ export function Section6() {
       name: "Mon Pasag",
       role: "Loyal Suki",
       review:
-        "The Pork Belly Adobo tastes exactly like my Lola's cooking. It's so hard to find genuine lutong bahay in the city, but La Cocina Inasal nails it every single time. My family eats here every Sunday!",
+        "The Beef sinigang tastes exactly like my Lola's cooking. It's so hard to find genuine lutong bahay in the city, but La Cocina Inasal nails it every single time. My family eats here every Sunday!",
       rating: 5,
       image: mon,
     },
@@ -57,7 +57,7 @@ export function Section6() {
       name: "Francis Gorospe",
       role: "First-time Visitor",
       review:
-        "We booked a table for our anniversary wanting something authentic. The Kare-Kare was incredibly rich and the meat was fall-off-the-bone tender. A premium dining experience with true Filipino heart.",
+        "We booked a table for our anniversary wanting something authentic. The Bulalo was incredibly rich and the meat was fall-off-the-bone tender. A premium dining experience with true Filipino heart.",
       rating: 5,
       image: gorospe,
     },
